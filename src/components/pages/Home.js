@@ -179,6 +179,14 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+                
             </div>
             </HomeContainer>
 
@@ -252,5 +260,27 @@ const HomeContainer = styled.div`
     box-shadow: var(--box-shadow);
 }
 
+
+
+.skills-title{
+    padding: 0 14rem;
+}
+
+.skills-title h1{
+    font-size: 35px;
+}
+
+.skills{
+    background: rgba(248, 252, 253, 0.973);
+    /* background: red; */
+    padding: 2rem 0;
+    width: 16rem;
+    margin: .5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.skills:hover{
+    box-shadow: var(--box-shadow);
+}
 
 `
