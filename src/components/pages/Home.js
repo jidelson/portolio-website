@@ -1,27 +1,103 @@
 import React from 'react';
-import banner from '../.././images/banner.jpg';
+import cartoon from '../../images/cartoon.png';
+import styled from 'styled-components';
 
 function Home() {
     return (
-        <div className="main-home">
-            <div className="home-top">
-                <div className="container text-center">
-                    <h1>Joe Idelson</h1>
-                        <h3>Hey there! I'm Joe Idelson, a full stack web developer.</h3>
-                        <p>
-                        I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation 
-                        and Visual Effects. I am hard working and passionate about my work. I am always looking for ways to improve. I 
-                        graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary
-                        techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and 
-                        working on a variety of art projects.
-                        </p>
+
+            <HomeContainer className="main-home">
+                <div className="home-top py-4">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-6 col-md-12 site-title">
+                                <h3 className="intro">Hey there! I am</h3>
+                                <h1 className="name text-uppercase">Joe Idelson</h1>
+                                <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
+                                <div className="site-buttons">
+                                    <div className="d-flex flex-row">
+                                        <button type="button" className="btn button primary-button mr-4 text-uppercase">Hire Me</button>
+                                        <button type="button" className="btn button secondary-button text-uppercase">My Resume</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-12 banner-image">
+                                <img src={cartoon} alt="cartoon-img" className="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </HomeContainer>
+
     )
 }
 export default Home;
 
-// const HomeContainer = styled.home`
+const HomeContainer = styled.div`
 
-// `
+.intro{
+    padding-top: 15%;
+    font: normal bold 50px/72px var(--roboto);
+    font-weight: 500;
+}
+
+.name{
+    font: normal bold 50px/72px var(--roboto);
+    font-size: 5.5rem;
+}
+
+.title-text{
+    font: normal bold 50px/72px var(--roboto);
+}
+.jobTitle{
+    font: normal bold 50px/72px var(--roboto);
+    font-size: 1.5rem;
+}
+
+.button{
+    padding: 1.5rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+    background:whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after, .button-secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+    border: 2px solid #854fee;
+}
+
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+`

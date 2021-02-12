@@ -1,0 +1,20 @@
+:root {
+    --mainDark: #343a40;
+    --mainGrey: rgba(109, 109, 109);
+    --mainLightGrey: rgba(172, 172, 172);
+    --mainWhite: #fff;
+    --mainBlue: #007bff;
+
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+    --roboto: 'Roboto', cursive;
+  }
+  
+  .navbar-toggler:focus{
+    outline: none;
+  }
+  
+  .navbar-toggler{
+    border: none;
+  }
