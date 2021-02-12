@@ -1,6 +1,18 @@
 import React from 'react';
-import cartoon from '../../images/cartoon.png';
 import styled from 'styled-components';
+
+import cartoon from '../../images/cartoon.png';
+import about from '../../images/about.png';
+
+import html from '../../images/html.png';
+import css from '../../images/css.png';
+import javascript from '../../images/javascript.png';
+import react from '../../images/react.png';
+import python from '../../images/python.png';
+import redux from '../../images/redux.png';
+import node from '../../images/node.png';
+import express from '../../images/express.png';
+import sql from '../../images/sql.png';
 
 function Home() {
     return (
@@ -26,6 +38,148 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-12">
+                            <div className="about-image">
+                                <img src={about} alt="About me" className="img-fluid" />
+                            </div>
+                        </div>
+                        <div className="col-lg-8 col-md-12 about-title">
+                            <h2 className="text-uppercase pt-5">
+                              Let me introduce myself
+                            </h2>
+                        <div className="paragraph py-4 w-75">
+                            <p className="para">
+                            Hey there! I'm Joe Idelson, a full stack web developer.
+                            I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation and Visual Effects. I am hard working and passionate about my work. I am always looking for ways to improve.
+                            </p>
+                            <p className="para">
+                            I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.                            </p>
+                        </div>
+                            <button type="button" className="btn button primary-button text-uppercase"> Download Resume</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center skills-title">
+                        <h1 className="text-uppercase title-text">Skills</h1>
+                        <p className="para">
+                            Dummy text  Dummy text  Dummy text  Dummy text  Dummy text  Dummy text 
+                            Dummy text  Dummy text  Dummy text  Dummy text  Dummy text  Dummy text 
+                        </p> 
+                    </div>
+                </div>
+                <div className="container skills-list">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={html} alt="Skills-1" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">HTML</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={css} alt="Skills-2" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={javascript} alt="Skills-3" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h5 className="card-title text-uppercase font-roboto">Javascript</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={react} alt="Skills-4" className="img-fluid rounded mx-auto d-block" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h5 className="card-title text-uppercase font-roboto">React</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={python} alt="Skills-5" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">Python</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={redux} alt="Skills-6" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">Redux</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={node} alt="Skills-7" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">Node</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={express} alt="Skills-8" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">Express</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={sql} alt="Skills-1" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">SQLite Studio</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </HomeContainer>
 
     )
@@ -97,7 +251,6 @@ const HomeContainer = styled.div`
     color: whitesmoke;
     box-shadow: var(--box-shadow);
 }
-
 
 
 `

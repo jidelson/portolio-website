@@ -10,7 +10,7 @@ function Footer() {
                         <div className="col-md-12">
                             <ul className="list-inline">
                                 <li className="list-inline-item"><a href="/">Home</a></li>
-                                <li className="list-inline-item"><a href="/about">About Me</a></li>
+                                <li className="list-inline-item"><a href="/about">About</a></li>
                                 <li className="list-inline-item"><a href="/portfolio">Portfolio</a></li>
                                 <li className="list-inline-item"><a href="/resume">Resume</a></li>
                                 <li className="list-inline-item"><a href="/contact">Contact</a></li>
@@ -39,11 +39,18 @@ const FooterContainer = styled.footer`
 .footer-bottom{
     padding-top: 3rem;
     padding-bottom: 2rem;
+    color: turquoise;
 }
 ul li a{
-    color: var(--mainGrey);
+    color: white;
+    text-transform: uppercase;
 }
 ul li a:hover{
-    color:var(--mainLightGrey)
+    color:var(--mainLightGrey);
+}
+
+.list-inline{
+    display: flex;
+    justify-content: space-between;
 }
 `;
