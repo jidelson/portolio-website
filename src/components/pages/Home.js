@@ -14,30 +14,35 @@ import node from '../../images/node.png';
 import express from '../../images/express.png';
 import sql from '../../images/sql.png';
 
+import vbb from '../../images/vbb.png';
+import cookbook from '../../images/cookbook.jpg';
+import cookbook2 from '../../images/cookbook2.png';
+
+
 function Home() {
     return (
 
-            <HomeContainer className="main-home">
-                <div className="home-top py-4">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6 col-md-12 site-title">
-                                <h3 className="intro">Hey there! I am</h3>
-                                <h1 className="name text-uppercase">Joe Idelson</h1>
-                                <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
-                                <div className="site-buttons">
-                                    <div className="d-flex flex-row">
-                                        <button type="button" className="btn button primary-button mr-4 text-uppercase">Hire Me</button>
-                                        <button type="button" className="btn button secondary-button text-uppercase">My Resume</button>
-                                    </div>
+        <HomeContainer className="main-home">
+            <div className="home-top py-4">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 site-title">
+                            <h3 className="intro">Hey there! I am</h3>
+                            <h1 className="name text-uppercase">Joe Idelson</h1>
+                            <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
+                            <div className="site-buttons">
+                                <div className="d-flex flex-row">
+                                    <button type="button" className="btn button primary-button mr-4 text-uppercase">Hire Me</button>
+                                    <button type="button" className="btn button secondary-button text-uppercase">My Resume</button>
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-md-12 banner-image">
-                                <img src={cartoon} alt="cartoon-img" className="img-fluid" />
-                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 banner-image">
+                            <img src={cartoon} alt="cartoon-img" className="img-fluid" />
                         </div>
                     </div>
                 </div>
+            </div>
 
 
 
@@ -45,29 +50,29 @@ function Home() {
 
 
 
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-12">
-                            <div className="about-image">
-                                <img src={about} alt="About me" className="img-fluid" />
-                            </div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-4 col-md-12">
+                        <div className="about-image">
+                            <img src={about} alt="About me" className="img-fluid" />
                         </div>
-                        <div className="col-lg-8 col-md-12 about-title">
-                            <h2 className="text-uppercase pt-5">
-                              Let me introduce myself
-                            </h2>
-                        <div className="paragraph py-4 w-75">
-                            <p className="para">
+                    </div>
+                    <div className="col-lg-8 col-md-12 about-title">
+                        <h2 className="text-uppercase pt-5">
+                            Let me introduce myself
+                        </h2>
+                    <div className="paragraph py-4 w-75">
+                        <p className="para">
                             Hey there! I'm Joe Idelson, a full stack web developer.
                             I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation and Visual Effects. I am hard working and passionate about my work. I am always looking for ways to improve.
-                            </p>
-                            <p className="para">
+                        </p>
+                        <p className="para">
                             I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.                            </p>
-                        </div>
-                            <button type="button" className="btn button primary-button text-uppercase"> Download Resume</button>
-                        </div>
+                    </div>
+                        <button type="button" className="btn button primary-button text-uppercase"> Download Resume</button>
                     </div>
                 </div>
+            </div>
 
 
 
@@ -75,7 +80,7 @@ function Home() {
 
 
 
-                <div className="container">
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center skills-title">
                         <h1 className="text-uppercase title-text">Skills</h1>
@@ -85,6 +90,7 @@ function Home() {
                         </p> 
                     </div>
                 </div>
+            
                 <div className="container skills-list">
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-12">
@@ -179,15 +185,81 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-                
             </div>
+
+
+
+
+
+
+
+            
+
+            <div className="container">
+                <div className="project-title pb-5">
+                    <h1 className="text-uppercase title-h1 text-center">Projects</h1>
+                </div>
+
+                    {/* <div className="button-group text-center">
+                        <button type="button" className="active" id="btn1" data-filter="*">All</button>
+                        <button type="button" data-filter=".front-end">Front End</button>
+                        <button type="button" data-filter=".back-end">Back End</button>
+                        <button type="button" data-filter=".latest">Latest</button>
+                        <button type="button" data-filter=".upcoming">Updating</button>
+                    </div> */}
+
+                <div className="row grid">
+                    <div className="col-lg-4 col-md-6 col-sm-12 element-item latest front-end py-4">
+                        <div className="our-project">
+                            <div className="img">
+                                <img src={vbb} alt="portfolio-1" />
+                            </div>
+                            <div className="title py-4 text-center">
+                                <h4 className="text-uppercase">Village Book Builder</h4>
+                                <span className="text-secondary">Front End Developer</span>
+                            </div>
+                            <div className="text-center"> 
+                                <a href="https://github.com/Lambda-School-Labs/village-book-builders-fe-b" className="btn btn-info" role="button">View</a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12 element-item back-end">
+                        <div className="our-project">
+                            <div className="img">
+                                <img src={cookbook} alt="portfolio-2" />
+                            </div>
+                            <div className="title py-4 text-center">
+                                <h4 className="text-uppercase">Secret Family Recipes</h4>
+                                <span className="text-secondary">Back End Developer</span>
+                                <div className="text-center">
+                                    <a href="https://github.com/bw-secret-family-recipes-4/Backend" className="btn btn-info" role="button">View</a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12 element-item front-end">
+                        <div className="our-project">
+                            <div className="img">
+                                <img src={cookbook2} alt="portfolio-3" />
+                            </div>
+                            <div className="title py-4 text-center">
+                                <h4 className="text-uppercase">Secret Family Recipes</h4>
+                                <span className="text-secondary">Front End Developer</span>
+                                <div className="text-center">
+                                    <a href="https://github.com/secret-family-recipes-bwft/front-end" className="btn btn-info" role="button">View</a>                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+		
+                
             </HomeContainer>
 
     )
@@ -195,6 +267,11 @@ function Home() {
 export default Home;
 
 const HomeContainer = styled.div`
+
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
 
 .intro{
     padding-top: 15%;
@@ -260,8 +337,6 @@ const HomeContainer = styled.div`
     box-shadow: var(--box-shadow);
 }
 
-
-
 .skills-title{
     padding: 0 14rem;
 }
@@ -282,5 +357,27 @@ const HomeContainer = styled.div`
 .skills:hover{
     box-shadow: var(--box-shadow);
 }
+
+.button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.button-group button + button{
+    padding-left: 3rem;
+}
+
+.grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.grid .our-project .img:hover{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+
 
 `
