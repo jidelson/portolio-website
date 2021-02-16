@@ -2,7 +2,7 @@ import React from 'react'
 function About() {
     return (
         <div>
-            <h1>About Me Page</h1>
+            <h1>Joe Idelson</h1>
         </div>
     )
 }

@@ -18,6 +18,8 @@ import vbb from '../../images/vbb.png';
 import cookbook from '../../images/cookbook.jpg';
 import cookbook2 from '../../images/cookbook2.png';
 
+import { Link } from 'react-router-dom';
+
 
 function Home() {
     return (
@@ -32,8 +34,9 @@ function Home() {
                             <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
                             <div className="site-buttons">
                                 <div className="d-flex flex-row">
-                                    <button type="button" className="btn button primary-button mr-4 text-uppercase">Hire Me</button>
-                                    <button type="button" className="btn button secondary-button text-uppercase">My Resume</button>
+                                    <Link className="btn button primary-button mr-4 text-uppercase" to="/contact">Hire Me</Link>
+                                    <Link className="btn button secondary-button text-uppercase" to="/resume">My Resume</Link>
+
                                 </div>
                             </div>
                         </div>
@@ -69,7 +72,8 @@ function Home() {
                         <p className="para">
                             I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.                            </p>
                     </div>
-                        <button type="button" className="btn button primary-button text-uppercase"> Download Resume</button>
+                        {/* <button type="button" className="btn button primary-button text-uppercase" > Download Resume</button> */}
+                        <a href="/resume" className="btn button primary-button text-uppercase" download>Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -83,11 +87,7 @@ function Home() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center skills-title">
-                        <h1 className="text-uppercase title-text">Skills</h1>
-                        <p className="para">
-                            Dummy text  Dummy text  Dummy text  Dummy text  Dummy text  Dummy text 
-                            Dummy text  Dummy text  Dummy text  Dummy text  Dummy text  Dummy text 
-                        </p> 
+                        <h1 className="text-uppercase title-text">Skills</h1> 
                     </div>
                 </div>
             
@@ -200,16 +200,9 @@ function Home() {
                     <h1 className="text-uppercase title-h1 text-center">Projects</h1>
                 </div>
 
-                    {/* <div className="button-group text-center">
-                        <button type="button" className="active" id="btn1" data-filter="*">All</button>
-                        <button type="button" data-filter=".front-end">Front End</button>
-                        <button type="button" data-filter=".back-end">Back End</button>
-                        <button type="button" data-filter=".latest">Latest</button>
-                        <button type="button" data-filter=".upcoming">Updating</button>
-                    </div> */}
 
                 <div className="row grid">
-                    <div className="col-lg-4 col-md-6 col-sm-12 element-item latest front-end py-4">
+                    <div className="col-lg-4 col-md-6 col-sm-12  py-4">
                         <div className="our-project">
                             <div className="img">
                                 <img src={vbb} alt="portfolio-1" />
@@ -223,7 +216,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 element-item back-end">
+                    <div className="col-lg-4 col-md-6 col-sm-12 py-4">
                         <div className="our-project">
                             <div className="img">
                                 <img src={cookbook} alt="portfolio-2" />
@@ -237,7 +230,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 element-item front-end">
+                    <div className="col-lg-4 col-md-6 col-sm-12 py-4">
                         <div className="our-project">
                             <div className="img">
                                 <img src={cookbook2} alt="portfolio-3" />
