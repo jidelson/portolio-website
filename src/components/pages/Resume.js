@@ -3,6 +3,7 @@ import rez from '../../images/rez.pdf';
 // import { Document, Page } from 'react-pdf';
 import styled from 'styled-components';
 
+
 function Resume() {
     return (
         <ResumeContainer className="text-center">
