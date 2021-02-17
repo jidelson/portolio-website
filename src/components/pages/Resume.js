@@ -23,7 +23,7 @@ const ResumeContainer = styled.div`
     padding: 1.5rem 2.2rem;
     font: normal 500 16px/20px var(--roboto);
     position: relative;
-    border: 3px solid transparent;
+    border: 2px solid #854fee;
     border-radius: 4px;
 }
 

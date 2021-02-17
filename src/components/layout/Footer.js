@@ -35,7 +35,7 @@ function Footer() {
             </div>
             
                     <div className="footer-bottom">
-                        <p className="text-center">
+                        <p className="text-center mt-3 mb-0">
                             &copy;{new Date().getFullYear()} Joe Idelson - All Rights Reserved
                         </p>
                     </div>
@@ -63,7 +63,8 @@ ul li a{
     text-transform: uppercase;
 }
 ul li a:hover{
-    color:var(--mainLightGrey);
+    color:turquoise;
+    text-decoration:none;
 }
 
 .list-inline{

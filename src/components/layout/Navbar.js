@@ -58,7 +58,8 @@ const NavContainer = styled.div`
 }
 
 .nav-link:hover{
-  color:rgba(172, 172, 172);
+  /* color:rgba(172, 172, 172); */
+  color: turquoise;
 }
 
 `

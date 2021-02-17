@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import cartoon from '../../images/cartoon.png';
 import about from '../../images/about.png';
 
+import rez from '../../images/rez.pdf';
+
+
 import html from '../../images/html.png';
 import css from '../../images/css.png';
 import javascript from '../../images/javascript.png';
@@ -73,7 +76,8 @@ function Home() {
                             I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.                            </p>
                     </div>
                         {/* <button type="button" className="btn button primary-button text-uppercase" > Download Resume</button> */}
-                        <a href="/resume" className="btn button primary-button text-uppercase" download>Download Resume</a>
+                        {/* <a href="https://drive.google.com/file/d/17F7QoJLItDouYDLbZDfQROixhDqa5TrY/view " download className="btn button primary-button text-uppercase">Download Resume</a> */}
+                        <a href={rez} download className="btn button primary-button text-uppercase">Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -197,7 +201,7 @@ function Home() {
 
             <div className="container">
                 <div className="project-title pb-5">
-                    <h1 className="text-uppercase title-h1 text-center">Projects</h1>
+                    <h1 className="project-title text-uppercase text-center">Projects</h1>
                 </div>
 
 
@@ -212,7 +216,7 @@ function Home() {
                                 <span className="text-secondary">Front End Developer</span>
                             </div>
                             <div className="text-center"> 
-                                <a href="https://github.com/Lambda-School-Labs/village-book-builders-fe-b" className="btn btn-info" role="button">View</a>  
+                                <a href="https://github.com/Lambda-School-Labs/village-book-builders-fe-b" className="btn button-proj primary-button mr-4 text-uppercase" role="button">View</a>  
                             </div>
                         </div>
                     </div>
@@ -224,8 +228,8 @@ function Home() {
                             <div className="title py-4 text-center">
                                 <h4 className="text-uppercase">Secret Family Recipes</h4>
                                 <span className="text-secondary">Back End Developer</span>
-                                <div className="text-center">
-                                    <a href="https://github.com/bw-secret-family-recipes-4/Backend" className="btn btn-info" role="button">View</a>  
+                                <div className="text-center py-4">
+                                    <a href="https://github.com/bw-secret-family-recipes-4/Backend" className="btn button-proj primary-button mr-4 text-uppercase" role="button">View</a>  
                                 </div>
                             </div>
                         </div>
@@ -238,8 +242,8 @@ function Home() {
                             <div className="title py-4 text-center">
                                 <h4 className="text-uppercase">Secret Family Recipes</h4>
                                 <span className="text-secondary">Front End Developer</span>
-                                <div className="text-center">
-                                    <a href="https://github.com/secret-family-recipes-bwft/front-end" className="btn btn-info" role="button">View</a>                         
+                                <div className="text-center py-4">
+                                    <a href="https://github.com/secret-family-recipes-bwft/front-end" className="btn button-proj primary-button mr-4 text-uppercase" role="button">View</a>                         
                                 </div>
                             </div>
                         </div>
@@ -340,7 +344,6 @@ p.para{
 
 .skills{
     background: rgba(248, 252, 253, 0.973);
-    /* background: red; */
     padding: 2rem 0;
     width: 16rem;
     margin: .5rem .5rem;
@@ -350,6 +353,7 @@ p.para{
 .skills:hover{
     box-shadow: var(--box-shadow);
 }
+
 
 .button-group button{
     background: transparent;
@@ -370,7 +374,31 @@ p.para{
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
+.button-proj{
+    padding: 1rem 1.5rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 2px solid #854fee;
+    border-radius: 4px;
+}
 
+.button-proj.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
 
+.button-proj.primary-button:hover{
+    background:whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
 
+.project-title{
+    font: normal bold 50px/72px var(--roboto);
+    padding: 0 14rem;
+    font-size: 35px;
+}
 `
