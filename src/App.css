@@ -21,7 +21,7 @@
 
 
   
-  /*Small devices (landscape phones, up to 576px)*/
+  /** Small devices (landscape phones, up to 576px) **/
   @media (max-width: 576px) { 
     .rezDlBtn{
       text-align: center;
