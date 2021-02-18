@@ -26,6 +26,20 @@
     .rezDlBtn{
       text-align: center;
     }
+
+    /* PORTFOLIO PAGE */
+    .projectOne{
+      width: 75%;
+    }
+    .projectTwo{
+      width: 75%;
+    }
+    .projectThree{
+      width: 75%;
+    }
+    .projectRow{
+      text-align: center;
+    }
    }
   
  /*Medium devices (tablets, up to 768px)  */
@@ -81,6 +95,10 @@
     .skillsNine{
       display:flex;
       justify-content: center;    
+    }
+    /* PORTFOLIO PAGE */
+    .projectRow{
+      text-align: center;
     }
    }
   
@@ -149,6 +167,20 @@
     .heyThere{
       text-align: center;
     }
+    .bayB{
+      width: 75%;  
+  }
+  
+  .wc{
+      width:75%;
+  }
+
+  /* PORTFOLIO PAGE */
+  .projectRow{
+    display: flex;
+    justify-content: center;
+  }
+
    }
   
   /* Extra large devices (large desktops, up to1200px) */

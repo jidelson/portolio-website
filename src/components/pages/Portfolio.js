@@ -15,11 +15,11 @@ function Portfolio() {
             </div>
 
 
-            <div className="row grid">
+            <div className="projectRow row grid">
                 <div className="col-lg-4 col-md-6 col-sm-12  py-4">
                     <div className="our-project">
                         <div className="img">
-                            <img src={vbb} alt="portfolio-1" />
+                            <img src={vbb} alt="portfolio-1" className="projectOne" />
                         </div>
                         <div className="title py-4 text-center">
                             <h4 className="text-uppercase">Village Book Builder</h4>
@@ -33,7 +33,7 @@ function Portfolio() {
                 <div className="col-lg-4 col-md-6 col-sm-12 py-4">
                     <div className="our-project">
                         <div className="img">
-                            <img src={cookbook} alt="portfolio-2" />
+                            <img src={cookbook} alt="portfolio-2" className="projectTwo" />
                         </div>
                         <div className="title py-4 text-center">
                             <h4 className="text-uppercase">Secret Family Recipes</h4>
@@ -47,7 +47,7 @@ function Portfolio() {
                 <div className="col-lg-4 col-md-6 col-sm-12 py-4">
                     <div className="our-project">
                         <div className="img">
-                            <img src={cookbook2} alt="portfolio-3" />
+                            <img src={cookbook2} alt="portfolio-3" className="projectThree" />
                         </div>
                         <div className="title py-4 text-center">
                             <h4 className="text-uppercase">Secret Family Recipes</h4>

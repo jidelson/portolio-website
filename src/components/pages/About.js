@@ -68,7 +68,7 @@ function About() {
                     </div>
                     <div className="col-lg-4 col-md-12">
                         <div className="py-4">
-                            <img src={wc} alt="" className="wc img-fluid" />
+                            <img src={wc} alt="walnutCreek-image" className="wc img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ function About() {
                     </div>
 
                     <div className="col-lg-8 col-md-12 about-title">
-                        <div className="expressionText paragraph py-4 w-75">
+                        <div className="expressionText paragraph py-4">
                             <p className="para text-center py-5">
                                 After graduating high school and attending a year at the University of Oregon I enrolled in a
                                 digital arts college called Expression College. 
@@ -172,11 +172,5 @@ p.para{
     width: 75%;
 }
 
-.bayB{
-    width: 75%;  
-}
 
-.wc{
-    width:75%;
-}
 `
