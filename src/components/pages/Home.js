@@ -75,8 +75,6 @@ function Home() {
                         <p className="para">
                             I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.                            </p>
                     </div>
-                        {/* <button type="button" className="btn button primary-button text-uppercase" > Download Resume</button> */}
-                        {/* <a href="https://drive.google.com/file/d/17F7QoJLItDouYDLbZDfQROixhDqa5TrY/view " download className="btn button primary-button text-uppercase">Download Resume</a> */}
                         <a href={rez} download className="btn button primary-button text-uppercase">Download Resume</a>
                     </div>
                 </div>

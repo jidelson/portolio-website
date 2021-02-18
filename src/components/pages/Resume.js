@@ -8,7 +8,9 @@ function Resume() {
     return (
         <ResumeContainer className="text-center">
             
-            <a className="btn button primary-button mr-4 text-uppercase" href="https://drive.google.com/file/d/17F7QoJLItDouYDLbZDfQROixhDqa5TrY/view?usp=sharing">Resume</a>
+            <a className="btn button primary-button mr-4 text-uppercase" href="https://drive.google.com/file/d/1urVavN1ztUdGnO6UMR6UIm1xZEU3Yqxl/view?usp=sharing">
+                Resume
+            </a>
             
         </ResumeContainer>
     )    
