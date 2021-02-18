@@ -86,16 +86,16 @@ function Home() {
 
 
 
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12 text-center skills-title">
                         <h1 className="text-uppercase title-text">Skills</h1> 
                     </div>
                 </div>
             
-                <div className="container skills-list">
+                <div className="container-fluid skills-list">
                     <div className="row">
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsOne col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={html} alt="Skills-1" className="rounded mx-auto d-block img-fluid" />
@@ -105,7 +105,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsTwo col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={css} alt="Skills-2" className="rounded mx-auto d-block img-fluid" />
@@ -115,7 +115,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsThree col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={javascript} alt="Skills-3" className="rounded mx-auto d-block img-fluid" />
@@ -125,7 +125,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsFour col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={react} alt="Skills-4" className="img-fluid rounded mx-auto d-block" />
@@ -135,7 +135,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsFive col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={python} alt="Skills-5" className="rounded mx-auto d-block img-fluid" />
@@ -145,7 +145,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsSix col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={redux} alt="Skills-6" className="rounded mx-auto d-block img-fluid" />
@@ -155,7 +155,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsSeven col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={node} alt="Skills-7" className="rounded mx-auto d-block img-fluid" />
@@ -165,7 +165,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsEight col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={express} alt="Skills-8" className="rounded mx-auto d-block img-fluid" />
@@ -175,7 +175,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="skillsNine col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
                                     <img src={sql} alt="Skills-1" className="rounded mx-auto d-block img-fluid" />
@@ -197,50 +197,51 @@ function Home() {
 
             
 
-            <div className="container">
-                <div className="project-title pb-5">
-                    <h1 className="project-title text-uppercase text-center">Projects</h1>
+            <div className="container-fluid project-section">
+            <div className="row">
+                    <div className="col-lg-12 text-center skills-title">
+                        <h1 className="text-uppercase title-text">Projects</h1> 
+                    </div>
                 </div>
 
-
                 <div className="row grid">
-                    <div className="col-lg-4 col-md-6 col-sm-12  py-4">
+                    <div className="projectOne col-lg-4 col-md-6 col-sm-12 py-4">
                         <div className="our-project">
                             <div className="img">
-                                <img src={vbb} alt="portfolio-1" />
+                                <img className="proj-img" src={vbb} alt="portfolio-1" />
                             </div>
-                            <div className="title py-4 text-center">
+                            <div className="title py-4">
                                 <h4 className="text-uppercase">Village Book Builder</h4>
                                 <span className="text-secondary">Front End Developer</span>
                             </div>
-                            <div className="text-center"> 
+                            <div> 
                                 <a href="https://github.com/Lambda-School-Labs/village-book-builders-fe-b" className="btn button-proj primary-button mr-4 text-uppercase" role="button">View</a>  
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 py-4">
+                    <div className="projectTwo col-lg-4 col-md-6 col-sm-12 py-4">
                         <div className="our-project">
                             <div className="img">
-                                <img src={cookbook} alt="portfolio-2" />
+                                <img className="proj-img" src={cookbook} alt="portfolio-2" />
                             </div>
-                            <div className="title py-4 text-center">
+                            <div className="title py-4">
                                 <h4 className="text-uppercase">Secret Family Recipes</h4>
                                 <span className="text-secondary">Back End Developer</span>
-                                <div className="text-center py-4">
+                                <div className="py-4">
                                     <a href="https://github.com/bw-secret-family-recipes-4/Backend" className="btn button-proj primary-button mr-4 text-uppercase" role="button">View</a>  
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 py-4">
+                    <div className="projectThree col-lg-4 col-md-6 col-sm-12 py-4">
                         <div className="our-project">
                             <div className="img">
-                                <img src={cookbook2} alt="portfolio-3" />
+                                <img className="proj-img" src={cookbook2} alt="portfolio-3" />
                             </div>
-                            <div className="title py-4 text-center">
+                            <div className="title py-4">
                                 <h4 className="text-uppercase">Secret Family Recipes</h4>
                                 <span className="text-secondary">Front End Developer</span>
-                                <div className="text-center py-4">
+                                <div className="py-4">
                                     <a href="https://github.com/secret-family-recipes-bwft/front-end" className="btn button-proj primary-button mr-4 text-uppercase" role="button">View</a>                         
                                 </div>
                             </div>
@@ -332,10 +333,6 @@ p.para{
     box-shadow: var(--box-shadow);
 }
 
-.skills-title{
-    padding: 0 14rem;
-}
-
 .skills-title h1{
     font-size: 35px;
 }
@@ -368,9 +365,9 @@ p.para{
     font: normal 700 25px/12px var(--roboto);
 }
 
-.grid .our-project .img:hover{
+/* .grid .our-project .img:hover{
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-}
+} */
 
 .button-proj{
     padding: 1rem 1.5rem;
@@ -396,7 +393,11 @@ p.para{
 
 .project-title{
     font: normal bold 50px/72px var(--roboto);
-    padding: 0 14rem;
     font-size: 35px;
 }
+
+.proj-img{
+    width: 50%;
+}
+
 `

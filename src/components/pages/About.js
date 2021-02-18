@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import headshot from '../../images/headshot.jpg';
 import bayB from '../../images/bayB.jpg';
 import wc from '../../images/wc.jpg';
+import expression from '../../images/expression.jpg';
+import lambda from '../../images/lambda.png';
 
 
 
@@ -50,8 +52,6 @@ function About() {
 
             <div className="container-fluid">
                 <div className="row">
-                   
-
                     <div className="col-lg-4 col-md-12">
                         <div className="py-4">
                             <img src={bayB} alt="" className="bayB img-fluid" />
@@ -71,10 +71,60 @@ function About() {
                             <img src={wc} alt="" className="wc img-fluid" />
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-4 col-md-12">
+                        <div className=" py-4">
+                            <img src={expression} alt="expression-img" className="expression img-fluid" />
+                        </div>
+                    </div>
+
+                    <div className="col-lg-8 col-md-12 about-title">
+                        <div className="paragraph py-4 w-75">
+                            <p className="para text-center py-5">
+                                After graduating high school and attending a year at the University of Oregon I enrolled in a
+                                digital arts college called Expression College. 
+                            </p>
+                            <p className="para text-center py-1">
+                                It was there that I was introduced, taught, and learned many new technologies used for production.
+                                I gained the ability to learn new programs at a rapid rate which directly translated to my transition
+                                into web development.
+                            </p>
+                            <p className="para text-center py-1">
+                                After graduating Expression, I worked as a freelancer doing many different projects from graphic design
+                                to fully rendered 3D animations. 
+                            </p>
+                            <p className="para text-center py-1">
+                                During this time, on a daily basis I was using the Adobe Suite and primarily Autodesk Maya, along with
+                                a number of other programs. As time progressed, I noticed I was drawn more towards the skills in the 
+                                animation field that were more technical including rigging. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
   
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-8 col-md-12 about-title">
+                        <div className="paragraph py-4 w-75">
+                            <p className="para text-center py-5">
+                               I then enrolled in Lambda School to learn full stack web development. Now I can't wake up without thinking about coding.
+                               I am so excited to see where my passion will take me!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-12">
+                        <div className=" py-4">
+                            <img src={lambda} alt="lambda-img" className="lambda img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
                 
         </AboutContainer>
              
@@ -116,6 +166,10 @@ p.para{
     background:whitesmoke;
     background-clip: padding-box;
     color: black;
+}
+
+.expression{
+    width: 75%;
 }
 
 `
