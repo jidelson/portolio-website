@@ -14,17 +14,17 @@ function About() {
     return (
         <AboutContainer>
             <div className="container-fluid">
-                <div className="row">
+                <div className="topRow row">
                     <div className="col-lg-4 col-md-12">
                         <div className="headshot-image py-4">
                             <img src={headshot} alt="headshot" className="headshot img-fluid" />
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 about-title">
-                        <h2 className="text-uppercase pt-5">
+                        <h2 className="heyThere text-uppercase pt-5">
                             Hey there!
                         </h2>
-                        <div className="paragraph py-4 w-75">
+                        <div className="paragraph py-4">
                             <p className="para">
                                 I'm Joe Idelson, a full stack web developer.   
                             </p>
@@ -51,15 +51,15 @@ function About() {
             </div>
 
             <div className="container-fluid">
-                <div className="row">
+                <div className="whereImFromRow row">
                     <div className="col-lg-4 col-md-12">
                         <div className="py-4">
-                            <img src={bayB} alt="" className="bayB img-fluid" />
+                            <img src={bayB} alt="bayBridge_SFskyline-img" className="bayB img-fluid" />
                         </div>
                     </div>
 
                     <div className="col-lg-4 col-md-12 about-title">
-                        <div className="paragraph py-4 w-75">
+                        <div className="bornText paragraph py-4 w-75">
                             <p className="para text-center py-5 mt-5 pl-4 ml-5">
                                 I was born in the beautiful city of San Francisco and currently reside in my hometown
                                 of Walnut Creek, CA.   
@@ -75,15 +75,15 @@ function About() {
             </div>
 
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-lg-4 col-md-12">
-                        <div className=" py-4">
+                <div className="expression-container row">
+                    <div className="expressionRow col-lg-4 col-md-12">
+                        <div className="expression-image py-4">
                             <img src={expression} alt="expression-img" className="expression img-fluid" />
                         </div>
                     </div>
 
                     <div className="col-lg-8 col-md-12 about-title">
-                        <div className="paragraph py-4 w-75">
+                        <div className="expressionText paragraph py-4 w-75">
                             <p className="para text-center py-5">
                                 After graduating high school and attending a year at the University of Oregon I enrolled in a
                                 digital arts college called Expression College. 
@@ -110,7 +110,7 @@ function About() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-8 col-md-12 about-title">
-                        <div className="paragraph py-4 w-75">
+                        <div className="lambdaText paragraph py-4 w-75">
                             <p className="para text-center py-5">
                                I then enrolled in Lambda School to learn full stack web development. Now I can't wake up without thinking about coding.
                                I am so excited to see where my passion will take me!
@@ -118,8 +118,8 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-12">
-                        <div className=" py-4">
+                    <div className="lambda-image col-lg-4 col-md-12">
+                        <div className="py-4">
                             <img src={lambda} alt="lambda-img" className="lambda img-fluid" />
                         </div>
                     </div>
@@ -136,7 +136,7 @@ export default About;
 const AboutContainer = styled.div`
 
 .headshot{
-    width: 60%;
+    width: 80%;
 
 }
 
@@ -172,4 +172,11 @@ p.para{
     width: 75%;
 }
 
+.bayB{
+    width: 75%;  
+}
+
+.wc{
+    width:75%;
+}
 `

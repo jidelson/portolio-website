@@ -21,14 +21,14 @@
 
 
   
-  /*Small devices (landscape phones, 576px and up)*/
+  /*Small devices (landscape phones, up to 576px)*/
   @media (max-width: 576px) { 
     .rezDlBtn{
       text-align: center;
     }
    }
   
- /*Medium devices (tablets, 768px and up)  */
+ /*Medium devices (tablets, up to 768px)  */
   @media (max-width: 768px) {
     .cartoon-image{
       width: 75%;
@@ -84,8 +84,10 @@
     }
    }
   
-   /* Large devices (desktops, 992px and up) */
+   /* Large devices (desktops, up to 992px) */
   @media (max-width: 992px) { 
+
+    /* HOME PAGE */
     .projectOne{
       text-align: center; 
     }
@@ -95,9 +97,61 @@
     .projectThree{
       text-align: center; 
     }
+
+    /* ABOUT PAGE */
+    .headshot-image{
+      width: 50%;
+      margin-left: 3%;
+    }
+ 
+    .topRow{
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      
+    }
+
+    .headshot{
+      margin-left: 50%;
+    }
+
+    .whereImFromRow{
+     text-align: center;
+    }
+
+    .expressionRow{
+      text-align: center;
+    }
+    .expressionText{
+      margin-left: 10%;
+    }
+    .expression-image{
+      width:50%; 
+      text-align: center;
+      margin-left: 23%;
+    }
+    .expression-container{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .lambdaText{
+      margin-left: 10%;
+    }
+    .bornText{
+      margin-left: 10%;
+    }
+    .lambda{
+      width: 50%;
+    }
+    .lambda-image{
+      text-align: center;
+    }
+    .heyThere{
+      text-align: center;
+    }
    }
   
-  /* Extra large devices (large desktops, 1200px and up) */
+  /* Extra large devices (large desktops, up to1200px) */
   @media (max-width: 1200px) { 
 
    }
