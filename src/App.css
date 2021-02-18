@@ -23,12 +23,29 @@
   
   /*Small devices (landscape phones, 576px and up)*/
   @media (max-width: 576px) { 
-
+    .rezDlBtn{
+      text-align: center;
+    }
    }
   
  /*Medium devices (tablets, 768px and up)  */
-  @media (max-width: 768px) { 
-
+  @media (max-width: 768px) {
+    .cartoon-image{
+      width: 75%;
+    }
+    .about-image{
+      width: 75%;
+    } 
+    .aboutRow{
+      display: flex;
+      justify-content: center;
+      padding-left: 15%;
+    }
+    .about-intro{
+      display: flex;
+      flex-direction:column;
+      
+    }
     .skillsOne{
       display:flex;
       justify-content: center;
@@ -39,25 +56,32 @@
     }
     .skillsThree{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;
+    }
     .skillsFour{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;    
+    }
     .skillsFive{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;    
+    }
     .skillsSix{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;    
+    }
     .skillsSeven{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;    
+    }
     .skillsEight{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;    
+    }
     .skillsNine{
       display:flex;
-      justify-content: center;    }
+      justify-content: center;    
+    }
    }
   
    /* Large devices (desktops, 992px and up) */

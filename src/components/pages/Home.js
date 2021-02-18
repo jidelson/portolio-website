@@ -44,7 +44,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 banner-image">
-                            <img src={cartoon} alt="cartoon-img" className="img-fluid" />
+                            <img src={cartoon} alt="cartoon-img" className="cartoon-image img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -57,26 +57,42 @@ function Home() {
 
 
             <div className="container-fluid">
-                <div className="row">
+                <div className="aboutRow row">
+                    
                     <div className="col-lg-4 col-md-12">
-                        <div className="about-image">
-                            <img src={about} alt="About me" className="img-fluid" />
+                        <div>
+                            <img src={about} alt="About me" className="about-image img-fluid" />
                         </div>
                     </div>
-                    <div className="col-lg-8 col-md-12 about-title">
+
+                    <div className="about-intro col-lg-8 col-md-12 about-title">
                         <h2 className="text-uppercase pt-5">
                             Let me introduce myself
                         </h2>
-                    <div className="paragraph py-4 w-75">
+                        <div className="paragraph py-4 w-75">
                         <p className="para">
                             Hey there! I'm Joe Idelson, a full stack web developer.
                             I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation and Visual Effects. I am hard working and passionate about my work. I am always looking for ways to improve.
                         </p>
                         <p className="para">
-                            I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.                            </p>
+                            I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.
+                        </p>
                     </div>
-                        <a href={rez} download className="btn button primary-button text-uppercase">Download Resume</a>
+                       
                     </div>
+
+                    <div className="container-fluid">
+                    <div className="row">
+                    <div className="col-lg-5 col-md-12 pb-5">
+                           
+                        </div>
+                    <div className="rezDlBtn col-lg-7 col-md-12 pb-5">
+                            <a href={rez} download className="btn button primary-button text-uppercase">Download Resume</a>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
                 </div>
             </div>
 
