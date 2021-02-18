@@ -8,7 +8,7 @@
     --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
-    --roboto: 'Roboto', cursive;
+    --roboto: 'Roboto', serif;
   }
   
   .navbar-toggler:focus{
