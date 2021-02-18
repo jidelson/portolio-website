@@ -41,9 +41,10 @@ function Contact() {
                     </div>
                 </form>
 
-                <div className="text-center py-4">
-                   <p><i class="fas fa-phone">&nbsp;(925)478-1747</i></p> 
-                   <p> <i class="fas fa-envelope-square">&nbsp;joeidelson@gmail.com</i></p> 
+                
+                <div className="bottomInfo text-center py-4">
+                   <p><i class="fas fa-phone">&nbsp;<span className="phoneInfo">(925)478-1747</span></i></p> 
+                   <p> <i class="fas fa-envelope-square">&nbsp;<span className="emailInfo">joeidelson@gmail.com</span></i></p> 
                 </div>
                
 
@@ -96,6 +97,14 @@ const ContactContainer = styled.div`
 
 .fas.fa-envelope-square{
     font-size: 4rem;
+}
+
+.phoneInfo{
+    font-size:50px;
+}
+
+.emailInfo{
+    font-size:30px;
 }
 
 `

@@ -40,6 +40,13 @@
     .projectRow{
       text-align: center;
     }
+    /* CONTACT PAGE */
+    .bottomInfo{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
    }
   
  /*Medium devices (tablets, up to 768px)  */
@@ -99,6 +106,13 @@
     /* PORTFOLIO PAGE */
     .projectRow{
       text-align: center;
+    }
+    /* CONTACT PAGE */
+    .phoneInfo{
+      font-size: 70px;
+    }
+    .emailInfo{
+      font-size: 45px;
     }
    }
   
