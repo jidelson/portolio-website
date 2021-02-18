@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 
-// set port
+// Set port
 const port = process.env.PORT || 8080
 
 app.use(express.static(__dirname));
 
-// routes
+// Routes
 
 app.get("/", function(req, res) {
     res.render("index");
