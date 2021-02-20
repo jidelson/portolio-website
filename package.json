@@ -1,0 +1,25 @@
+{
+  "name": "my-website-app",
+  "version": "1.0.0",
+  "description": "my-website-app",
+  "main": "index.js",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jidelson/heroku-code-refactor.git"
+  },
+  "author": "Joe Idelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jidelson/heroku-code-refactor/issues"
+  },
+  "homepage": "https://github.com/jidelson/heroku-code-refactor#readme"
+}
