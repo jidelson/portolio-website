@@ -1,15 +1,16 @@
 {
   "name": "my-website-app",
   "version": "0.1.0",
-  
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.0",
     "bootstrap": "^4.6.0",
+    "compression": "^1.7.4",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-download-link": "^2.3.0",

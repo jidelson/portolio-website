@@ -208,11 +208,8 @@ function Home() {
 
 
 
-
-
-
             
-
+            
             <div className="container-fluid project-section">
             <div className="row">
                     <div className="col-lg-12 text-center skills-title">
@@ -417,3 +414,5 @@ p.para{
 }
 
 `
+
+ 
