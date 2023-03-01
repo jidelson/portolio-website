@@ -10,6 +10,6 @@ server.get("/", (req, res) => {
   `)
 });
 
-server.listen(port, () => {
+server.listen(process.ENV.PORT || port, () => {
   console.log(`Server running on port ${port}`);
 });
