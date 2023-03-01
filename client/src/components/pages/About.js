@@ -29,7 +29,8 @@ function About() {
                                 I'm Joe Idelson, a full stack web developer.   
                             </p>
                             <p className="para">
-                                I learned my development skills through Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development.
+                                I learned my development skills through Lambda School <span>&#40;</span>now known as Bloom Institute of Technology<span>&#41;</span>, a nine month 
+                                intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development.
                                 Lambda School constantly updates its curriculum based on what tools and techniques are currently being used in the industry.
                                 While attending Lambda School I was also able to be a mentor to students in earlier units of the curriculum.    
                             </p>
