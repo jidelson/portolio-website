@@ -22,7 +22,7 @@ function About() {
                     </div>
                     <div className="col-lg-8 col-md-12 about-title">
                         <h2 className="heyThere text-uppercase pt-5">
-                            Hey there!
+                            Hi there!
                         </h2>
                         <div className="paragraph py-4">
                             <p className="para">
